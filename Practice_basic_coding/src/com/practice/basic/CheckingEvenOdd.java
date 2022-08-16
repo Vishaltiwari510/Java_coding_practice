@@ -15,7 +15,7 @@ public class CheckingEvenOdd {
 	       else  {
 	    	   System.out.println("Odd Number");
 	       }
-	      
+	      sc.close();
 	}
 
 }

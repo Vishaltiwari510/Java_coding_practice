@@ -23,6 +23,7 @@ public class Greatest_of_Three_Numbers {
        else {
     	   System.out.println(num3 +" is greatest");
        }
+       sc.close();
 	}
 
 }
