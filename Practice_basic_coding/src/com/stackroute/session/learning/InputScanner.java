@@ -1,5 +1,5 @@
 package com.stackroute.session.learning;
-
+//session-2 - 14 April
 import java.util.Scanner;
 
 public class InputScanner {
