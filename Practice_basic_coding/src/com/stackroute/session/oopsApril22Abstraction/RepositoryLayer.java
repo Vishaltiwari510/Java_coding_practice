@@ -1,4 +1,4 @@
-package com.stackroute.session.oops.April22Abstraction;
+package com.stackroute.session.oopsApril22Abstraction;
 
 public class RepositoryLayer {
 void getDbConnection(Database database) {

@@ -1,4 +1,4 @@
-package com.stackroute.session.oops.April22Abstraction;
+package com.stackroute.session.oopsApril22Abstraction;
 
 public abstract class Database {
  public static final String dbName="empdb";
