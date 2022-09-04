@@ -1,14 +1,14 @@
-package com.stackroute.session.collectionFrameworkMapImplementation2;
+package com.stackroute.session.collectionFrameworkMapImplementation3;
 
 import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println("Enter the car name you want to search details");
-			String choice;
-			Scanner sc = new Scanner(System.in);
-			choice = sc.nextLine();
+//		System.out.println("Enter the car name you want to search details");
+//			String choice;
+//			Scanner sc = new Scanner(System.in);
+//			choice = sc.nextLine();
 					
 		
 		CarService carservice = new CarService();
@@ -30,11 +30,11 @@ public class Main {
 		carservice.addCar(car5.getName(), car5);
 		carservice.addCar(car6.getName(), car6);
 		carservice.addCar(car7.getName(), car7);
-		
+		carservice.addCar(null, null);
 //passing car name to searchCar method as key so that 
 //using get method searchCar returns value using get method.
 		
-		Car car = carservice.searchCar(choice);
+		Car car = carservice.searchCar("etios");
 		//Avoiding exception using if statement
 		if(car==null) {
 			System.out.println("Car you search is not found....");
