@@ -8,6 +8,7 @@ public class Second_Smallest {
 		// TODO Auto-generated method stub
 		 int [] arr;
 	       arr = new int[10];
+	       System.out.println("Enter elements of an array");
 	       Scanner sc = new Scanner(System.in);
 	    	for(int i=0; i<arr.length; i++) {
 	    		arr[i] = sc.nextInt();
