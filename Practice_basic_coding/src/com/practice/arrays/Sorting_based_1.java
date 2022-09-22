@@ -2,18 +2,21 @@ package com.practice.arrays;
 
 import java.util.Scanner;
 
-//Sort an array
+//Sort an array so that first half in ascending and second half in descending order
 
 public class Sorting_based_1 {
 
 	public static void main(String[] args) {
-		int arr[] = new int[10];
-		System.out.println("Enter the array.....");
+		System.out.println("Enter the length of array.......");
 		Scanner sc = new Scanner(System.in);
-		for(int i=0; i<10; i++) {
+		int n = sc.nextInt();
+		int arr[] = new int[n];
+		System.out.println("Enter the array.....");
+		
+		for(int i=0; i<arr.length; i++) {
 			arr[i] = sc.nextInt();
 		}
-		for(int i=0; i<10; i++) {
+		for(int i=0; i<arr.length; i++) {
 			System.out.println(arr[i]);
 		}
 		for(int i=0; i<arr.length-1; i++) {
@@ -25,8 +28,11 @@ public class Sorting_based_1 {
 				}
 				
 			}
-		}
-		for(int j=0; j<10; j++) {
+		}System.out.println("First half in ascending .....");
+		for(int j=0; j<arr.length/2; j++) {
+			System.out.println(arr[j]);
+		}System.out.println("Second half in descending .....");
+		for(int j=arr.length-1; j>=arr.length/2; j--) {
 			System.out.println(arr[j]);
 		}
 	}
